@@ -17,7 +17,7 @@ export default function Home() {
   const [txId, setTxId] = useState(null);
   //const router = useRouter();
 
-  const getAgentOneData = useCallback(async (input) => {
+  const getAgentOneData = useCallback(async (input: string) => {
     if (!walletProvider || !input) return;
     setShowAnimation(true);
     try {

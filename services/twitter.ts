@@ -18,7 +18,3 @@ export const getUserTwitterInfo = async (username: string) => {
     console.log('Error GET user info: ', e)
   }
 }
-
-function later(delay, value) {
-  return new Promise(resolve => setTimeout(resolve, delay, value));
-}

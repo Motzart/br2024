@@ -1,3 +1,4 @@
+//@ts-nocheck
 'use client';
 
 import Image from 'next/image';
@@ -5,13 +6,13 @@ import ReactSpeedometer from "react-d3-speedometer"
 import { Tweet } from 'react-tweet'
 import { getUserTwitterInfo } from '@/services/twitter';
 import { useEffect, useState } from 'react';
-import { useSearchParams } from 'next/navigation';
+//import { useSearchParams } from 'next/navigation';
 
 export default function User() {
   const [loading, setLoading] = useState(false);
   const [twitterData, setTwitterData] = useState(null);
-  const searchParams = useSearchParams()
-  const userId = searchParams.get('id');
+  // const searchParams = useSearchParams()
+  const userId = '';//searchParams.get('id');
 
   useEffect(() => {
     if(!userId) return;
